@@ -1,11 +1,11 @@
-const client = require('./lib/client')
+const alexa = require('./alexa')
 const { DATABASE, VERSION } = require('./config')
 const start = async () => {
 	try {
-		console.log(`levanter ${VERSION}`)
+		console.log(`Alexa ${VERSION}`)
 		await DATABASE.sync()
 		console.log('DB syncing')
-		await client.connect()
+		await alexa.connect()
 	} catch (error) {
 		console.error(error)
 	}
