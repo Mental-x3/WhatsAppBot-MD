@@ -1,5 +1,5 @@
 build:
   docker:
-    worker: /lib/class/Dockerfile
+    worker: /Alexa/Dockerfile
 run:
   worker: npm start
